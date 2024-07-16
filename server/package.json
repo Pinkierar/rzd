@@ -1,0 +1,29 @@
+{
+  "name": "csmbackend",
+  "version": "2.0.1",
+  "description": "Backend Module for CSM LSR Ujin",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "auto-install": "npm install file:../../core file:../../role-model file:../../tasks",
+    "dev": "tsx watch src/index.ts",
+    "win-auto-build": "npm run win-clean-dist && npm run just-compile",
+    "win-clean-dist": "if exist dist rmdir /s /q dist",
+    "auto-build": "npm run clean-dist && npm run just-compile",
+    "clean-dist": "rm -rf dist/",
+    "just-compile": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+    "production": "node dist/index.js"
+  },
+  "author": "pinkierar",
+  "license": "ISC",
+  "dependencies": {
+    "core": "file:../../core",
+    "role-model": "file:../../role-model",
+    "tasks": "file:../../tasks"
+  },
+  "devDependencies": {
+    "tsc-alias": "^1.8.8",
+    "tsx": "^4.9.3",
+    "typescript": "^5.4.3"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "removeComments": true,
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "paths": {
+      "#config": ["./config"],
+      "#controllers/*": ["./controllers/*"],
+      "#db": ["./db"],
+      "#includes/*": ["./includes/*"],
+      "#middlewares/*": ["./middlewares/*"],
+      "#routers": ["./routers"],
+      "#services/*": ["./services/*"],
+      "#transfers/*": ["./transfers/*"],
+      "#entities/*": ["./entities/*"]
+    },
+    "rootDirs": ["./src"],
+    "typeRoots": ["types"],
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noImplicitOverride": true
+  }
+}
