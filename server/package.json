@@ -17,6 +17,7 @@
   "author": "pinkierar",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.6.8",
     "core": "file:../../core",
     "role-model": "file:../../role-model",
     "tasks": "file:../../tasks"
